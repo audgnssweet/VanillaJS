@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="js_clock">
-      <h1 class="js_clock__title">00:00</h1>
+    <div class="clock">
+      <h1>00:00</h1>
     </div>
-    <form class="js_WhoAreYou_form hide">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js_greetings hide"></h4>
 
-    <form class="js_todoList_form">
-      <input type="text" placeholder="Write you must do" />
+    <form class="loginForm hide">
+      <input type="text" placeholder="What's your name?" />
     </form>
 
-    <ul class="js_todoList"></ul>
+    <div class="greet hide">
+      <span>hello!</span>
+    </div>
+
+    <form class="todoForm hide">
+      <input type="text" class="todoForm__input" placeholder="write what to do" />
+      <button class="todoForm__button">O</button>
+    </form>
+    <ul class="todoList hide"></ul>
 
     <script src="./clock.js"></script>
     <script src="./form.js"></script>
